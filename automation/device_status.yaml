@@ -1,0 +1,18 @@
+###################################
+##  Notifies me via IFTTT when something goes down.
+###################################
+
+alias: 'Device Status'
+hide_entity: True
+trigger:
+  - platform: state
+    entity_id:
+      - sensor.plexserver
+      - sensor.diskstation
+           
+action:
+  service: script.ifttt_notify
+  data_template:
+    value1: 'Device Status:'
+    value2: "{{ trigger.entity_id.split('.')[1] }} is "
+    value3: "{{ trigger.to_state.state }}"

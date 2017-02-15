@@ -1,0 +1,25 @@
+######################################################################
+##  Shut it all down.  No one is here
+######################################################################
+alias: 'Away Mode'
+trigger:
+ - platform: state
+   entity_id: group.family
+   state: not_home
+condition:
+  - condition: state
+    entity_id: group.family
+    state: 'not_home '
+  - condition: state
+    entity_id: input_boolean.guest_mode
+    state: 'off'
+
+action:
+  service: script.ifttt_notify
+  data_template:
+    value1: 'Everyone is out:'
+    value2: "{{ trigger.entity_id.split('.')[1] }} is "
+    value3: "{{ trigger.to_state.state }}"
+
+      
+      

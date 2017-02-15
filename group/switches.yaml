@@ -1,0 +1,5 @@
+Switches:
+  entities:
+    - switch.bedroom_lamp
+    - switch.standing_lamp
+    - switch.kids_lamp

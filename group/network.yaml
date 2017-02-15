@@ -1,0 +1,19 @@
+Network:
+  entities:
+    #- sensor.since_last_boot_templated
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.lgsmarttv
+    - sensor.pc190
+    - sensor.nicksipad
+    - sensor.nick
+    - sensor.lucy
+    - sensor.np32556e059843
+    - sensor.ourimac
+    - sensor.appletv
+    - sensor.xbox
+    - sensor.kodipi
+    - sensor.plexserver
+    - sensor.diskstation
+    - sensor.chromecast
+    

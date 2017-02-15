@@ -1,0 +1,8 @@
+Scenes:
+  entities:
+    - scene.living_room_tv_time
+    - scene.bedtime
+    - scene.all_off_downstairs
+    - scene.all_off_upstairs
+    - scene.all_on_downstairs
+    - scene.all_on_upstairs

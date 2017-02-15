@@ -1,0 +1,42 @@
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - persistent_notification.update_available
+    - group.home_modes
+    - group.family
+    - group.weather
+    - group.living_room_lights
+    - group.Bedroom_lights
+    - group.Kitchen_lights
+    - group.dining_Room_Lights
+    - group.switches
+    - group.scenes
+    - group.media_players
+
+Lights:
+  view: yes
+  icon: mdi:lightbulb
+  entities:
+    - group.living_room_lights
+    - group.Bedroom_lights
+    - group.Kitchen_lights
+    - group.dining_Room_Lights
+    - group.switches
+    
+Info:
+  view: yes
+  icon: mdi:settings
+  entities:
+    - group.family
+    - group.network
+    - group.fitness
+    - group.sabnzb
+    - group.sensors
+    - group.weather
+    - group.automations
+    - group.all_devices
+    - group.all_lights
+    - group.all_scripts
+    - group.all_switches
+    - group.all_automations

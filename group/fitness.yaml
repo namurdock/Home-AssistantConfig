@@ -1,0 +1,4 @@
+Fitness:
+  entities:
+    - sensor.sleep_minutesawake
+    - sensor.steps

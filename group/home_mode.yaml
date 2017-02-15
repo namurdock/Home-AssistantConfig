@@ -1,0 +1,8 @@
+home_modes:
+  control: hidden
+  entities:
+    - input_boolean.guest_mode
+    #- input_slider.homes_brightness
+    - input_boolean.school_mode
+#    - input_boolean.pill_reminder
+#    - input_boolean.trash_reminder

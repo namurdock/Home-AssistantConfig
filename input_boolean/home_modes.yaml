@@ -1,0 +1,9 @@
+guest_mode:
+  name: Guest Mode
+  icon: mdi:account-alert
+  initial: off
+    
+school_mode:
+  name: School Mode
+  icon: mdi:school
+  initial: on

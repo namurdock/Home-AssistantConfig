@@ -1,0 +1,17 @@
+# User Tracking
+#device_tracker:
+- platform: owntracks
+  max_gps_accuracy: 50
+  waypoints: True
+  waypoint_whitelist:
+    - nick
+#- platform: tomato
+#  host: 192.168.1.1
+#  username: root
+#  password:  TeaBag
+#  http_id: TID568568330d58a073
+#- platform: locative
+- platform: nmap_tracker
+  hosts: 192.168.1.0/24
+  home_interval: 10
+  track_new_devices: no

@@ -1,0 +1,14 @@
+Kitchen lights:
+  entities:
+    - light.kitchen_inner
+    - light.kitchen_outer
+    
+Living Room lights:
+  entities:
+    - light.main_light
+    - switch.standing_lamp
+
+dining Room Lights:
+  entities:
+    - light.dining_room_table
+    - light.dining_room_outer

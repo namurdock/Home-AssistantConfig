@@ -1,0 +1,4 @@
+Lucy:
+  entities:
+    - device_tracker.lucy
+    - device_tracker.lucy_lucy

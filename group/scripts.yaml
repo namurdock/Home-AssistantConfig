@@ -1,0 +1,5 @@
+Scripts:
+  entities:
+    - script.interior_off
+    - script.jarvis_greeting
+    - script.switch_check

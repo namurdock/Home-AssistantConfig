@@ -1,0 +1,20 @@
+- name: Living Room TV Time
+  entities:
+       light.main_light: 
+           state: on
+           transition: 400
+           brightness: 90
+       light.kitchen_outer: 
+           state: off
+           transition: 400
+       light.kitchen_inner:
+           state: off
+           transition: 400
+       light.dining_room_table:
+           state: off
+           transition: 400
+       light.dining_room_outer:
+           state: off
+           transition: 400
+       switch.standing_lamp:
+           state: off

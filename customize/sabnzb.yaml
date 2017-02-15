@@ -1,0 +1,23 @@
+sensor.sabnzbd_disk:
+  friendly_name: 'Disk'
+  hidden: False
+
+sensor.sabnzbd_disk_free:
+  friendly_name: 'Disk Free'
+  hidden: False
+
+sensor.sabnzbd_left:
+  friendly_name: 'Left'
+  hidden: False
+
+sensor.sabnzbd_queue:
+  friendly_name: 'Queue'
+  hidden: False
+
+sensor.sabnzbd_speed:
+  friendly_name: 'Speed'
+  hidden: False
+
+sensor.sabnzbd_status:
+  friendly_name: 'Status'
+  hidden: False

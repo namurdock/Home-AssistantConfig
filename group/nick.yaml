@@ -1,0 +1,4 @@
+Nick:
+  entities:
+    - device_tracker.nick
+    - device_tracker.nick_nick

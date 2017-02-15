@@ -1,0 +1,49 @@
+  - name: All On (Downstairs)
+    entities:
+      light.main_light: 
+        state: on
+        brightness: 200
+        transition: 400
+      switch.standing_lamp:
+        state: on
+      light.kitchen_inner:
+        state: on
+        brightness: 200
+        transition: 400
+      light.kitchen_outer:
+        state: on
+        brightness: 200
+      light.dining_room_table:
+        state: on
+        brightness: 200
+        transition: 400
+      light.dining_room_outer:
+        state: on
+        brightness: 200
+        transition: 400
+  - name: All Off (Downstairs)
+    entities:
+      light.main_light: 
+        state: off
+      light.kitchen_inner:
+        state: off
+      light.kitchen_outer:
+        state: off
+      light.dining_room_table:
+        state: off
+      light.dining_room_outer:
+        state: off
+      switch.standing_lamp:
+        state: off
+  - name: All On (Upstairs)
+    entities:
+      switch.bedroom_lamp:
+        state: on
+      switch.lamp:
+        state: on
+  - name: All Off (Upstairs)
+    entities:
+      switch.bedroom_lamp:
+        state: off
+      switch.lamp:
+        state: off

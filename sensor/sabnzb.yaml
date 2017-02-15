@@ -1,0 +1,10 @@
+- platform: sabnzbd
+  host: 192.168.1.200
+  api_key: 129400e99e9bf3b95fddb46087991e94
+  monitored_variables:
+    - 'current_status'
+    - 'speed'
+    - 'queue_size'
+    - 'queue_remaining'
+    - 'disk_size'
+    - 'disk_free'

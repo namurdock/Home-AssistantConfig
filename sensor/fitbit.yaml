@@ -1,0 +1,4 @@
+  - platform: fitbit
+    monitored_resources:
+      - "activities/steps"
+      - "sleep/minutesAwake"

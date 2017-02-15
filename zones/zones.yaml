@@ -1,0 +1,20 @@
+- name: Home
+  latitude: 51.4829016
+  longitude: -2.7667593
+  radius: 50
+  icon: mdi:Home
+- name: St Peters
+  latitude: 51.480769
+  longitude: -2.766699
+  radius: 50
+  icon: mdi:school
+- name: Brampton
+  latitude: 51.481563
+  longitude: -2.767195
+  radius: 50
+  icon: mdi:school
+- name: Work
+  latitude: 51.482962
+  longitude: -2.761190
+  radius: 50
+  icon: mdi:laptop

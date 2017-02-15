@@ -1,0 +1,18 @@
+  - platform: cast
+    host: 192.168.1.133
+  - platform: webostv
+    host: 192.168.1.195
+    mac: CC:2D:8C:CF:BD:4F
+    name: Living Room TV
+    customize:
+      sources:
+      - hdmi1
+      - hdmi2
+      - livetv
+      - nowtv
+      - netflix
+      - youtube
+  - platform: kodi
+    host: 192.168.1.109
+    turn_off_action: quit
+  - platform: plex

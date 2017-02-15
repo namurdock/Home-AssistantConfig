@@ -1,0 +1,6 @@
+homes_brightness:
+  name: House Brightness
+  initial: 200
+  min: 0
+  max: 250
+  step: 1

@@ -1,0 +1,12 @@
+alias: "No Media Playing"
+hide_entity: True
+trigger:
+  platform: state
+  entity_id: media_player.kodi
+  state: 'paused'
+  for:
+    hours: 3
+    minutes: 0
+    seconds: 0
+action:
+  service: script.switch_turnoff_kodi

@@ -1,0 +1,25 @@
+######################################################################
+##  Good night Routine
+######################################################################
+
+alias: 'Good Night Routine'
+trigger:
+  - platform: event
+    event_type: good_night
+  - platform: state
+    entity_id: sensor.lgsmarttv
+    state: 'Offline'
+condition:
+  - condition: state
+    entity_id: input_boolean.guest_mode
+    state: 'off'
+  - condition: time
+    after: '22:00:00'
+  - condition: state
+    entity_id: input_boolean.guest_mode
+    state: 'off'
+action:
+  - delay: 00:10:00 
+  - service: script.interior_off
+
+      

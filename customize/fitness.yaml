@@ -1,0 +1,8 @@
+sensor.steps:
+  friendly_name: 'Steps'
+  hidden: False
+
+sensor.sleep_minutesawake:
+  friendly_name: 'Minutes Awake'
+  hidden: False
+  

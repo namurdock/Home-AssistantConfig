@@ -1,0 +1,16 @@
+  - name: Bedtime
+    entities:
+      light.main_light: 
+        state: off
+      light.kitchen_inner:
+        state: off
+      light.kitchen_outer:
+        state: off
+      light.dining_room_table:
+        state: off
+      light.dining_room_outer:
+        state: off
+      switch.standing_lamp:
+        state: off
+      switch.bedroom_lamp:
+        state: on

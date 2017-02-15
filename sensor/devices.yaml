@@ -1,0 +1,41 @@
+- platform: template
+  sensors:
+      lgsmarttv:
+        friendly_name: 'Front Room TV'
+        value_template: "{{ 'Online' if is_state('device_tracker.lgsmarttv', 'home') else 'Offline' }}"
+      pc190:
+        friendly_name: 'Nicks Laptop'
+        value_template: "{{ 'Online' if is_state('device_tracker.pc190', 'home') else 'Offline' }}"
+      nicksipad:
+        friendly_name: 'iPad Mini'
+        value_template: "{{ 'Online' if is_state('device_tracker.nicksipad', 'home') else 'Offline' }}"
+      nick:
+        friendly_name: 'Nicks Phone'
+        value_template: "{{ 'Online' if is_state('device_tracker.97dd8ce0457ef907', 'home') else 'Offline' }}"
+      lucy:
+        friendly_name: 'Lucys Phone'
+        value_template: "{{ 'Online' if is_state('device_tracker.lucy', 'home') else 'Offline' }}"
+      np32556e059843:
+        friendly_name: 'NOW TV Box'
+        value_template: "{{ 'Online' if is_state('device_tracker.np32556e059843', 'home') else 'Offline' }}"
+      ourimac:
+        friendly_name: 'iMac'
+        value_template: "{{ 'Online' if is_state('device_tracker.imac', 'home') else 'Offline' }}"
+      xbox:
+        friendly_name: 'Xbox One'
+        value_template: "{{ 'Online' if is_state('device_tracker.xbox', 'home') else 'Offline' }}"
+      kodipi:
+        friendly_name: 'KODI'
+        value_template: "{{ 'Online' if is_state('device_tracker.kodipi', 'home') else 'Offline' }}"
+      appletv:
+        friendly_name: 'Apple TV'
+        value_template: "{{ 'Online' if is_state('device_tracker.appletv', 'home') else 'Offline' }}"
+      plexserver:
+        friendly_name: 'Media Server'
+        value_template: "{{ 'Online' if is_state('device_tracker.plex_server', 'home') else 'Offline' }}"
+      diskstation:
+        friendly_name: 'Disk Station'
+        value_template: "{{ 'Online' if is_state('device_tracker.diskstation', 'home') else 'Offline' }}"
+      chromecast:
+        friendly_name: 'Chromecast'
+        value_template: "{{ 'Online' if is_state('device_tracker.chromecast', 'home') else 'Offline' }}"

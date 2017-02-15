@@ -1,0 +1,108 @@
+homeassistant:
+  # Name of the location where Home Assistant is running...
+  name: HOME
+  # Location required to calculate the time the sun rises and sets
+  latitude: 51.4829016
+  longitude: -2.7667593
+
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 9
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/London
+  
+  customize: !include_dir_merge_named customize 
+
+# Show links to resources in log and frontend
+# introduction:
+
+# Enables the frontend
+frontend:
+panel_iframe:
+  router:
+    title: 'Router'
+    icon: 'mdi:router-wireless'
+    url: 'http://192.168.1.1'
+  
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+  login_attempts_threshold: 3
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+  exclude:
+    entities:
+      - sensor.since_last_boot
+      - sensor.since_last_boot_templated
+      - sensor.time
+      - sensor.date
+
+# Track the sun
+sun:
+
+# IFTTT
+ifttt:
+  key: !secret ifttt_key
+
+#  default: info
+recorder:
+  purge_days: 7
+
+# Text to speech
+tts:
+  platform: google
+
+# MQTT For Presence
+mqtt:
+  broker: m20.cloudmqtt.com
+  port: 24788
+  username: !secret mqtt_user
+  password: !secret mqtt_pwd
+
+# Push  Bullet for notification
+notify:
+  - name: HomeAssistant
+    platform: pushbullet
+    api_key: !secret pushbullet_api
+
+# Vera Config
+#vera:
+#  vera_controller_url: http://192.168.1.188:3480/
+
+#Milight
+
+
+# RFXtrx
+rfxtrx:
+  device: /dev/serial/by-id/usb-RFXCOM_RFXtrx433_A14MNHP-if00-port0
+  debug: True
+  dummy: False
+
+group: !include_dir_merge_named group
+device_tracker: !include_dir_merge_list device_tracker
+sensor: !include_dir_merge_list sensor
+scene: !include_dir_merge_list scene
+switch: !include_dir_merge_list switch
+light: !include_dir_merge_list light
+media_player: !include_dir_merge_list mediaplayer
+script: !include_dir_merge_named scripts
+input_boolean: !include_dir_merge_named input_boolean
+input_slider:  !include_dir_merge_named input_slider
+zone: !include_dir_merge_list zones
+automation: !include_dir_list automation
