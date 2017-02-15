@@ -2,39 +2,41 @@
 ##  Weekday Morning Routines for the Wife and Kiddos.
 ######################################################################
 
-alias: 'Good Morning Routine'
-trigger:
-  - platform: event
-    event_type: good_morning
-  - platform: time
-    after: '07:00:00'
-condition:
-  - condition: state
-    entity_id: input_boolean.school_mode
-    state: 'on'
-  - condition: time    
-    weekday:
-      - mon
-      - tue
-      - wed
-      - thu
-      - fri
-action:
-  - service: switch.turn_on
-    entity_id: 
-      - switch.bedroom_lamp
-  - delay: 00:20:00   
-  - service: light.turn_on
-    entity_id: 
-      - light.dining_room_outer
-      - light.dining_room_table
-      - light.kitchen_inner
-      - light.kitchen_outer
-      - light.main_light
-    data:
-      brightness: 150
-  - delay: 01:00:00
-  - service: switch.turn_off
-    entity_id: 
-      - switch.bedroom_lamp
+- alias: 'Good Morning Routine'
+  trigger:
+    - platform: event
+      event_type: good_morning
+    - platform: time
+      after: '07:00:00'
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.school_mode
+      state: 'on'
+    - condition: time    
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+
+  action:
+    - service: switch.turn_on
+      entity_id: 
+        - switch.bedroom_lamp
+    - delay: 00:20:00   
+    - service: light.turn_on
+      entity_id: 
+        - light.dining_room_outer
+        - light.dining_room_table
+        - light.kitchen_inner
+        - light.kitchen_outer
+        - light.main_light
+      data:
+        brightness: 150
+    - delay: 01:00:00
+    - service: switch.turn_off
+      entity_id: 
+        - switch.bedroom_lamp
 

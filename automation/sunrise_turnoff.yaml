@@ -1,13 +1,11 @@
-alias: 'Sunrise Turn Stuff off' 
-hide_entity: False 
-trigger:
-  - platform: sun
-    event: sunrise
-    offset: "01:00:00"
-action:
-  - service: light.turn_off
-    entity_id: group.living_room_lights    
-    
-      
-    
-     
+- alias: 'Sunrise Turn Stuff off' 
+  hide_entity: False 
+  
+  trigger:
+    - platform: sun
+      event: sunrise
+      offset: "01:00:00"
+  
+  action:
+    - service: light.turn_off
+      entity_id: group.living_room_lights
