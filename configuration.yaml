@@ -43,7 +43,11 @@ conversation:
 
 # Enables support for tracking state changes over time.
 history:
-
+  include:
+    entities:
+      - sensor.download
+      - sensor.upload
+      
 # View all events in a logbook
 logbook:
   exclude:
@@ -63,7 +67,11 @@ ifttt:
 #  default: info
 recorder:
   purge_days: 7
-
+  db_url: !secret recorder_db
+  include:
+    entities:
+      - sensor.download
+      - sensor.upload
 # Text to speech
 tts:
   platform: google
