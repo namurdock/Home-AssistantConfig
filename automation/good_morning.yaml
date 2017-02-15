@@ -33,3 +33,8 @@ action:
       - light.main_light
     data:
       brightness: 150
+  - delay: 01:00:00
+  - service: switch.turn_off
+    entity_id: 
+      - switch.bedroom_lamp
+

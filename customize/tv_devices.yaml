@@ -1,0 +1,7 @@
+###################################
+##  Roku Section
+###################################
+media_player.roku_32556e059843: 
+  friendly_name: 'Bedroom NOW TV'
+media_player.plex_for_lg_webos_3101932afro5:
+  friendly_name: 'Plex - Front Room TV'

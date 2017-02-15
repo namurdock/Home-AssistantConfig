@@ -1,0 +1,7 @@
+alias: House - Adjust Brightness
+trigger:
+  platform: state
+  entity_id: light.kitchen_outer
+  action:
+    - service: light.turn_on
+      entity_id: light.kitchen_inner

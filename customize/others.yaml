@@ -1,0 +1,9 @@
+sensor.appletv:
+  icon: mdi:television
+device_tracker.appletv:
+  hidden: true
+
+sensor.humax:
+  icon: mdi:television
+device_tracker.humax:
+  hidden: true

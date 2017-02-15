@@ -1,0 +1,3 @@
+action:
+  - service: homeassistant.turn_on
+    entity_id: script.jarvis_greeting
