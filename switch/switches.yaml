@@ -1,4 +1,0 @@
-#switch:
-  - platform: wake_on_lan
-    name: Media Server
-    mac_address: "74:D4:35:E0:CF:C8"  

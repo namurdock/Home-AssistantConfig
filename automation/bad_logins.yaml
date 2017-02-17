@@ -9,8 +9,6 @@
       value_template: "{{ states('persistent_notification.httplogin') != 'unknown' }}"
 
   action:
-    - service: script.ifttt_notify
-      data_template:
-        value1: 'Bad Login: '
-        value2: 'There was a Hack attempt!'
-        value3: 'Go Check the GUI for details.'
+    service: script.pb_notify
+    data_template: 
+        value1: "Failed login attempt. Please check the network."

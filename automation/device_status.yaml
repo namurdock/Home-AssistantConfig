@@ -11,8 +11,6 @@
         - sensor.diskstation
            
   action:
-    - service: script.ifttt_notify
-      data_template:
-        value1: 'Device Status:'
-        value2: "{{ trigger.entity_id.split('.')[1] }} is "
-        value3: "{{ trigger.to_state.state }}"
+    service: script.pb_notify
+    data_template: 
+        value1: "Device Status: {{ trigger.entity_id.split('.')[1] }} is {{ trigger.to_state.state }}"

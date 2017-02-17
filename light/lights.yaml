@@ -16,12 +16,12 @@
       0a140053f523c807010070:
        name: Kitchen Inner
        fire_event: True
-  - platform: limitlessled
-    bridges:
-    - host: 192.168.1.70
-      port: 5987
-      version: 6 
-      groups:
-      - number: 1
-        name: Hallway
-        type: rgbw
+  #- platform: limitlessled
+  #  bridges:
+  #  - host: 192.168.1.70
+  #    port: 5987
+  #    version: 6 
+  #    groups:
+  #    - number: 1
+  #      name: Hallway
+  #      type: rgbw

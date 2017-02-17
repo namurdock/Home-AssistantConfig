@@ -11,7 +11,7 @@
         value_template: "{{ 'Online' if is_state('device_tracker.nicksipad', 'home') else 'Offline' }}"
       nick:
         friendly_name: 'Nicks Phone'
-        value_template: "{{ 'Online' if is_state('device_tracker.97dd8ce0457ef907', 'home') else 'Offline' }}"
+        value_template: "{{ 'Online' if is_state('device_tracker.nick', 'home') else 'Offline' }}"
       lucy:
         friendly_name: 'Lucys Phone'
         value_template: "{{ 'Online' if is_state('device_tracker.lucy', 'home') else 'Offline' }}"

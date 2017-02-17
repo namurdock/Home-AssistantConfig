@@ -10,14 +10,17 @@
   condition:
     - condition: state
       entity_id: group.family
-      state: 'not_home '
+      state: not_home
     - condition: state
       entity_id: input_boolean.guest_mode
       state: 'off'
  
   action:
-    - service: script.ifttt_notify
-      data_template:
-        value1: 'Everyone is out:'
-        value2: "{{ trigger.entity_id.split('.')[1] }} is "
-        value3: "{{ trigger.to_state.state }}"
+    service: script.pb_notify
+    data_template: 
+        value1: >
+          {% if is_state('group.family', 'home') %}
+            Everyone is home!
+          {% else %}
+            Nobody is home!
+          {% endif %} 

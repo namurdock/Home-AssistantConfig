@@ -1,3 +1,7 @@
 group.nick:
   friendly_name: 'Nick'
-  icon: mdi:home
+  icon: mdi:human-male
+
+group.lucy:
+  friendly_name: 'Lucy'
+  icon: mdi:human-female

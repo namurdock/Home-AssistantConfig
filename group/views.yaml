@@ -4,6 +4,7 @@ default_view:
   entities:
     - persistent_notification.update_available
     - group.home_modes
+    - group.scenes
     - group.family
     - group.weather
     - group.living_room_lights
@@ -11,7 +12,6 @@ default_view:
     - group.Kitchen_lights
     - group.dining_Room_Lights
     - group.switches
-    - group.scenes
     - group.media_players
 
 Lights:

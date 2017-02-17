@@ -35,12 +35,14 @@ group.family:
   friendly_name: 'Family'
   emulated_hue: False
   hidden: False
+  order: "3"
   
  
 group.home_modes:
   friendly_name: 'Home Modes'
   emulated_hue: False
   hidden: False
+  order: "1"
   
  
 group.info:
@@ -109,3 +111,8 @@ group.lucy:
   friendly_name: 'Lucy'
   hidden: False
   icon: mdi:account
+
+group.scenes:
+  friendly_name: 'Scenes'
+  hidden: False
+  order: "2"

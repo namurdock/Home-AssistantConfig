@@ -44,18 +44,18 @@ conversation:
 # Enables support for tracking state changes over time.
 history:
   include:
+    domains:
+      - switch
+      - media_player
     entities:
       - sensor.download
       - sensor.upload
+      - group.family
+      - group.nick
+      - group.lucy
       
 # View all events in a logbook
 logbook:
-  exclude:
-    entities:
-      - sensor.since_last_boot
-      - sensor.since_last_boot_templated
-      - sensor.time
-      - sensor.date
 
 # Track the sun
 sun:
@@ -69,9 +69,15 @@ recorder:
   purge_days: 7
   db_url: !secret recorder_db
   include:
+    domains:
+      - switch
+      - media_player
     entities:
       - sensor.download
       - sensor.upload
+      - group.family
+      - group.nick
+      - group.lucy
 # Text to speech
 tts:
   platform: google

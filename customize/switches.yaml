@@ -1,0 +1,16 @@
+###################################
+##  Switches Section
+###################################
+switch.bedroom_lamp: 
+  friendly_name: 'Bedroom Lamp'
+  icon: mdi:lightbulb-outline
+
+switch.standing_lamp: 
+  friendly_name: 'Standing Lamp'
+  icon: mdi:lightbulb-outline
+  
+switch.kids_lamp: 
+  friendly_name: 'Kids Lamp'
+  icon: mdi:lightbulb-outline
+  
+  
