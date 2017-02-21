@@ -1,0 +1,13 @@
+###################################
+##  Scenes Section
+###################################
+scene.all_off_downstairs:
+  friendly_name: 'All Off (Downstairs)'
+scene.all_off_upstairs:
+  friendly_name: 'All Off (Upstairs)'
+scene.all_on_downstairs:
+  friendly_name: 'All On (Downstairs)'
+scene.all_on_upstairs:
+  friendly_name: 'All On (Upstairs)'
+scene.living_room_tv_time:
+  friendly_name: 'TV Time'

@@ -7,8 +7,10 @@ Living Room lights:
   entities:
     - light.main_light
     - switch.standing_lamp
+    - switch.table_lamp
 
-dining Room Lights:
+Dining Room Lights:
   entities:
     - light.dining_room_table
     - light.dining_room_outer
+    - light.hallway

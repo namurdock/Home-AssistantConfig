@@ -1,0 +1,29 @@
+###################################
+##  Scripts Section
+###################################
+
+script.flash_notify:
+  friendly_name: 'Flash Notify'
+  emulated_hue: False
+  hidden: True 
+
+script.ifttt_notify:
+  friendly_name: 'Ifttt Notify'
+  emulated_hue: False
+  hidden: True 
+
+script.switch_check:
+  friendly_name: 'RF Check'
+  emulated_hue: False
+  hidden: True
+
+script.interior_off:
+  friendly_name: 'Turn Off All'
+  emulated_hue: False
+  hidden: False
+
+script.reset_MiLights:
+  friendly_name: 'Reset MiLights'
+  hidden: False
+  
+    

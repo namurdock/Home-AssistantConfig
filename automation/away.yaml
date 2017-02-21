@@ -5,7 +5,8 @@
   trigger:
    - platform: state
      entity_id: group.family
-     state: not_home
+     from: 'home'
+     to: 'not_home'
 
   condition:
     - condition: state
@@ -20,7 +21,49 @@
     data_template: 
         value1: >
           {% if is_state('group.family', 'home') %}
-            Everyone is home!
+            Someone is home!
           {% else %}
             Nobody is home!
+          {% endif %} 
+
+- alias: 'Home Mode'
+  trigger:
+   - platform: state
+     entity_id: group.family
+     from: 'not_home'
+     to: 'home'
+
+  condition:
+    - condition: state
+      entity_id: group.family
+      state: home
+    - condition: state
+      entity_id: input_boolean.guest_mode
+      state: 'off'
+ 
+  action:
+    service: script.pb_notify
+    data_template: 
+        value1: >
+          {% if is_state('group.family', 'home') %}
+            Someone is home!
+          {% else %}
+            Nobody is home!
+          {% endif %} 
+
+- alias: 'Work Mode'
+  trigger:
+   - platform: state
+     entity_id: device_tracker.nick_nick
+     from: 'not_home'
+     to: 'work'
+ 
+  action:
+    service: script.pb_notify
+    data_template: 
+        value1: >
+          {% if is_state('device_tracker.nick_nick', 'work') %}
+            Nick is at Work!
+          {% else %}
+            Nick is not at Work!
           {% endif %} 

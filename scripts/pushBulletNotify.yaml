@@ -10,6 +10,7 @@
 ######################################################################################################
 
 pb_notify:
+  alias: "Notify via Pushbullet"
   sequence:
     - service: notify.homeassistant
       data_template: {"message": "{{ value1 }}"} 

@@ -16,3 +16,5 @@
       entity_id: group.kitchen_lights
     - service: homeassistant.turn_on
       entity_id: group.dining_room_lights
+    - service: homeassistant.turn_on
+      entity_id: light.hallway

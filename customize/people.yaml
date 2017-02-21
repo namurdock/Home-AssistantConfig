@@ -1,7 +1,15 @@
-group.nick:
+sensor.nick_location:
   friendly_name: 'Nick'
   icon: mdi:human-male
 
-group.lucy:
+sensor.battery_nick:
+  friendly_name: 'Nicks Battery'
+  icon: mdi:battery
+
+sensor.lucy_location:
   friendly_name: 'Lucy'
   icon: mdi:human-female
+
+sensor.battery_lucy:
+  friendly_name: 'Lucys Battery'
+  icon: mdi:battery

@@ -14,3 +14,5 @@
         state: off
       switch.bedroom_lamp:
         state: on
+      light.hallway:
+        state: off

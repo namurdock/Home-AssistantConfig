@@ -1,4 +1,4 @@
-- alias: "Media player playing"
+- alias: "TV Turned On"
   hide_entity: False
   trigger:
     - platform: state

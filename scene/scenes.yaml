@@ -3,24 +3,26 @@
       light.main_light: 
         state: on
         brightness: 200
-        transition: 400
       switch.standing_lamp:
         state: on
       light.kitchen_inner:
         state: on
         brightness: 200
-        transition: 400
       light.kitchen_outer:
         state: on
         brightness: 200
       light.dining_room_table:
         state: on
         brightness: 200
-        transition: 400
       light.dining_room_outer:
         state: on
         brightness: 200
-        transition: 400
+      light.hallway:
+        state: on
+#        rgb_color: 255,255,255
+#        brightness: 130
+#        color_temp: 259
+        transition: 200
   - name: All Off (Downstairs)
     entities:
       light.main_light: 
@@ -32,6 +34,8 @@
       light.dining_room_table:
         state: off
       light.dining_room_outer:
+        state: off
+      light.hallway:
         state: off
       switch.standing_lamp:
         state: off

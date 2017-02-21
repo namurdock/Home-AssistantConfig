@@ -1,7 +1,8 @@
-- name: Living Room TV Time
+- name: Living Room Film Time
   entities:
        light.main_light: 
-           state: off
+           state: on
+           brightness: 90
        light.kitchen_outer: 
            state: off
        light.kitchen_inner:
@@ -13,6 +14,6 @@
        light.hallway:
            state: off
        switch.standing_lamp:
-           state: on
+           state: off
        switch.table_lamp:
-           state: on
+           state: off

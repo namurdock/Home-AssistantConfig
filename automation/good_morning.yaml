@@ -35,6 +35,7 @@
         - light.main_light
       data:
         brightness: 150
+    - service: script.reset_milights
     - delay: 01:00:00
     - service: switch.turn_off
       entity_id: 

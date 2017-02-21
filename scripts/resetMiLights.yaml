@@ -1,0 +1,10 @@
+reset_milights:
+  alias: "Reset Mi Lights"
+  sequence:
+    - service: light.turn_on
+      entity_id: light.hallway
+      data:
+        rgb_color: [255,255,255]
+        color_temp: 154
+        color_name: normal_warm
+        brightness: 200

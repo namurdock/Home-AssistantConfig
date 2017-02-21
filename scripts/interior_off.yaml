@@ -6,12 +6,16 @@
 ######################################################################################################
 
 interior_off:
+  alias: "Turn off all Interior Lights"
   sequence:
     - service: light.turn_off
       entity_id: 
         - group.kitchen_lights
         - group.living_room_lights
         - group.dining_Room_lights
+        - light.hallway
     - service: switch.turn_off
-      entity_id: switch.standing_lamp
-    
+      entity_id: 
+        - switch.standing_lamp
+        - switch.bedroom_lamp
+        - switch.table_lamp

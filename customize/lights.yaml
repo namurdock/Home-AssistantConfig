@@ -1,0 +1,27 @@
+light.dining_room_outer:
+  friendly_name: 'Dining Room - Outer'
+  hidden: False
+
+light.dining_room_table:
+  friendly_name: 'Dining Room - Table'
+  hidden: False
+
+light.f0fe6b1e2e5c:
+  friendly_name: 'MiLight Bridge'
+  hidden: True
+
+light.hallway:
+  friendly_name: 'Downstairs - Hallway'
+  hidden: False
+
+light.kitchen_inner:
+  friendly_name: 'Kitchen - Inner'
+  hidden: False
+
+light.kitchen_outer:
+  friendly_name: 'Kitchen - Outer'
+  hidden: False
+
+light.main_light:
+  friendly_name: 'Front Room - Main Light'
+  hidden: False

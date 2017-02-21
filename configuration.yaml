@@ -43,19 +43,22 @@ conversation:
 
 # Enables support for tracking state changes over time.
 history:
-  include:
-    domains:
-      - switch
-      - media_player
-    entities:
-      - sensor.download
-      - sensor.upload
-      - group.family
-      - group.nick
-      - group.lucy
+#  include:
+#    domains:
+#      - switch
+#      - media_player
+#    entities:
+#      - sensor.download
+#      - sensor.upload
+#      - group.family
+#      - group.nick
+#      - group.lucy
       
 # View all events in a logbook
 logbook:
+  exclude:
+    domains:
+      - sensor
 
 # Track the sun
 sun:
@@ -68,16 +71,16 @@ ifttt:
 recorder:
   purge_days: 7
   db_url: !secret recorder_db
-  include:
-    domains:
-      - switch
-      - media_player
-    entities:
-      - sensor.download
-      - sensor.upload
-      - group.family
-      - group.nick
-      - group.lucy
+#  include:
+#    domains:
+#      - switch
+#      - media_player
+#    entities:
+#      - sensor.download
+#      - sensor.upload
+#      - group.family
+#      - group.nick
+#      - group.lucy
 # Text to speech
 tts:
   platform: google
@@ -95,12 +98,8 @@ notify:
     platform: pushbullet
     api_key: !secret pushbullet_api
 
-# Vera Config
-#vera:
-#  vera_controller_url: http://192.168.1.188:3480/
-
-#Milight
-
+logger:
+  default: warning
 
 # RFXtrx
 rfxtrx:

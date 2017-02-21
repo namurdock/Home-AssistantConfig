@@ -1,4 +1,4 @@
-- alias: "Media player paused/stopped"
+- alias: "Kodi - Playing"
   hide_entity: False
   trigger:
     - platform: state
@@ -12,7 +12,5 @@
       entity_id: input_boolean.guest_mode
       state: 'off'
   action:
-    - service: switch.turn_on
-      entity_id: switch.standing_lamp
-    - service: switch.turn_on
-      entity_id: switch.kids_lamp
+    - service: scene.turn_on
+      entity_id: scene.living_room_film_time
