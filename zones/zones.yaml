@@ -18,3 +18,8 @@
   longitude: -2.761190
   radius: 50
   icon: mdi:laptop
+- name: SpareRoom
+  latitude: 0
+  longitude: 0
+  radius: 0
+  icon: mdi:Home

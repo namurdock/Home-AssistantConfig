@@ -6,5 +6,4 @@ reset_milights:
       data:
         rgb_color: [255,255,255]
         color_temp: 154
-        color_name: normal_warm
         brightness: 200

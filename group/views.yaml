@@ -6,6 +6,7 @@ default_view:
     - group.home_modes
     - group.scenes
     - group.family
+    - group.phones
     - group.weather
     - group.living_room_lights
     - group.Bedroom_lights

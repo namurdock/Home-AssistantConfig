@@ -4,14 +4,14 @@
 - alias: 'Away Mode'
   trigger:
    - platform: state
-     entity_id: group.family
-     from: 'home'
-     to: 'not_home'
+     entity_id: sensor.family_location
+     from: 'Home'
+     to: 'Not Home'
 
   condition:
     - condition: state
-      entity_id: group.family
-      state: not_home
+      entity_id: sensor.family_location
+      state: "Not Home"
     - condition: state
       entity_id: input_boolean.guest_mode
       state: 'off'
@@ -20,7 +20,7 @@
     service: script.pb_notify
     data_template: 
         value1: >
-          {% if is_state('group.family', 'home') %}
+          {% if is_state('sensor.family_location', 'Home') %}
             Someone is home!
           {% else %}
             Nobody is home!
@@ -29,14 +29,14 @@
 - alias: 'Home Mode'
   trigger:
    - platform: state
-     entity_id: group.family
-     from: 'not_home'
-     to: 'home'
+     entity_id: sensor.family_location
+     from: 'Not Home'
+     to: 'Home'
 
   condition:
     - condition: state
-      entity_id: group.family
-      state: home
+      entity_id: sensor.family_location
+      state: 'Home'
     - condition: state
       entity_id: input_boolean.guest_mode
       state: 'off'
@@ -45,7 +45,7 @@
     service: script.pb_notify
     data_template: 
         value1: >
-          {% if is_state('group.family', 'home') %}
+          {% if is_state('sensor.family_location', 'Home') %}
             Someone is home!
           {% else %}
             Nobody is home!
@@ -56,13 +56,13 @@
    - platform: state
      entity_id: device_tracker.nick_nick
      from: 'not_home'
-     to: 'work'
+     to: 'Work'
  
   action:
     service: script.pb_notify
     data_template: 
         value1: >
-          {% if is_state('device_tracker.nick_nick', 'work') %}
+          {% if is_state('device_tracker.nick_nick', 'Work') %}
             Nick is at Work!
           {% else %}
             Nick is not at Work!

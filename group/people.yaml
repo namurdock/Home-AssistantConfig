@@ -1,6 +1,4 @@
 Family:
   entities:
     - sensor.nick_location
-    - sensor.battery_nick
     - sensor.lucy_location
-    - sensor.battery_lucy

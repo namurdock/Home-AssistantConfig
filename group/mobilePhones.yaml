@@ -1,0 +1,4 @@
+Phones:
+  entities:    
+    - sensor.battery_nick
+    - sensor.battery_lucy

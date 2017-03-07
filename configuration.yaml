@@ -1,5 +1,5 @@
 homeassistant:
-  # Name of the location where Home Assistant is running....!!
+  # Name of the location where Home Assistant is running...
   name: HOME
   # Location required to calculate the time the sun rises and sets
   latitude: 51.4829016
@@ -17,7 +17,7 @@ homeassistant:
 # Show links to resources in log and frontend
 # introduction:
 
-# Enables the frontend now
+# Enables the frontend
 frontend:
 panel_iframe:
   router:
@@ -56,6 +56,9 @@ history:
       
 # View all events in a logbook
 logbook:
+  include:
+    domains:
+      - automation
   exclude:
     domains:
       - sensor
@@ -99,7 +102,7 @@ notify:
     api_key: !secret pushbullet_api
 
 logger:
-  default: warning
+    default: critical
 
 # RFXtrx
 rfxtrx:

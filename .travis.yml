@@ -3,9 +3,8 @@ python:
   - "3.4"
 install:
   - pip3 install homeassistant
+  - pip3 install pyRFXtrx
 script:
   - hass -c . --script check_config
 before_install:
   - mv travis_secrets.yaml secrets.yaml
-  
-
