@@ -19,6 +19,8 @@
         brightness: 200
       light.hallway:
         state: on
+      switch.table_lamp:
+        state: on
 #        rgb_color: 255,255,255
 #        brightness: 130
 #        color_temp: 259
@@ -39,15 +41,13 @@
         state: off
       switch.standing_lamp:
         state: off
+      switch.table_lamp:
+        state: off
   - name: All On (Upstairs)
     entities:
       switch.bedroom_lamp:
         state: on
-      switch.lamp:
-        state: on
   - name: All Off (Upstairs)
     entities:
       switch.bedroom_lamp:
-        state: off
-      switch.lamp:
         state: off

@@ -16,3 +16,5 @@
         state: on
       light.hallway:
         state: off
+      switch.table_lamp:
+        state: off

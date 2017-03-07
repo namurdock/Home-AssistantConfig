@@ -1,0 +1,3 @@
+light:
+  - platform: MagicBlue
+    host: F8:1D:78:60:47:90

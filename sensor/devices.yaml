@@ -53,3 +53,10 @@
                          {%- else -%}
                          {{ states('device_tracker.lucy_lucy') }}
                          {%- endif %}"
+      family_location:
+        friendly_name: 'Family'
+        value_template: "{%- if  ((is_state('device_tracker.lucy_lucy', 'home') or is_state('device_tracker.lucy', 'home'))) or ((is_state('device_tracker.nick_nick', 'home') or is_state('device_tracker.nick', 'home'))) -%}
+                          Home
+                         {%- else -%}
+                          Not Home
+                         {%- endif %}"

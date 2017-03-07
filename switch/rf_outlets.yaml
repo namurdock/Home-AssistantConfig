@@ -3,12 +3,12 @@
     devices:
       0a140000f523c802010060:
         name: Standing Lamp
-        fire_event: True
+        #fire_event: True
       0a140006f523c803010070:
         name: Bedroom Lamp
-        fire_event: True
+        #fire_event: True
       0a140006f523c804010070:
         name: Table Lamp
-        fire_event: True
+        #fire_event: True
 
  

@@ -7,4 +7,5 @@
 - platform: nmap_tracker
   hosts: 192.168.1.0/24
   home_interval: 10
+  scan_options: " --privileged -sP " 
   track_new_devices: no
